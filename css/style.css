@@ -77,3 +77,13 @@ header .nav-item a:hover::after {
     font-size: 30px;
     margin-bottom: 1em;
 }
+
+.load-more {
+    padding: 1rem 2rem;
+    border-color: #626262;
+    border-radius: 0;
+}
+
+.load-more span {
+    display: none;
+}
