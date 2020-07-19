@@ -7,7 +7,7 @@ $(function() {
         $.ajax({
             // эмулирую получение реальных постов, забитых в data.html
             url: '/data.html',
-            type: 'GET', // либо POST
+            type: 'POST', // либо POST
             beforeSend: function() {
                 btn.attr('disabled', true);
                 loader.addClass('d-inline-block');
