@@ -7,7 +7,7 @@ $(function() {
         $.ajax({
             // эмулирую получение реальных постов, забитых в data.html
             url: '/data.html',
-            type: 'POST', // либо POST
+            type: 'GET', // POST выбрасывает ошибку 405
             beforeSend: function() {
                 btn.attr('disabled', true);
                 loader.addClass('d-inline-block');
