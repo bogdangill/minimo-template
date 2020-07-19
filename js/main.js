@@ -6,7 +6,7 @@ $(function() {
         const loader = btn.find('span');
         $.ajax({
             // эмулирую получение реальных постов, забитых в data.html
-            url: '/data.html',
+            url: 'https://bogdangill.github.io/minimo-template/data.html',
             type: 'GET', // POST выбрасывает ошибку 405
             beforeSend: function() {
                 btn.attr('disabled', true);
