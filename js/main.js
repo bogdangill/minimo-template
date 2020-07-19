@@ -17,7 +17,7 @@ $(function() {
                 setTimeout(function(){
                     loader.removeClass('d-inline-block');
                     btn.attr('disabled', false);
-                    console.log(response);
+                    $('.after-posts').before(response); //туда вставляются посты из data.html
                 }, 1000);
             },
             error: function() {
