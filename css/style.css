@@ -87,3 +87,8 @@ header .nav-item a:hover::after {
 .load-more span {
     display: none;
 }
+
+.signup {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
