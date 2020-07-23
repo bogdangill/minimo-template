@@ -92,3 +92,34 @@ header .nav-item a:hover::after {
     background-color: #f0f0f0;
     padding: 70px 0;
 }
+
+.signup h3 {
+    color: #333;
+}
+
+.signup form {
+    margin-top: 70px;
+}
+
+.signup .form-input {
+    position: relative;
+}
+
+.signup .form-control {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    border-radius: 0%;
+}
+
+.signup .form-control:focus {
+    background: whitesmoke;
+    box-shadow: none;
+}
+
+.submit-button {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 25px;
+}
