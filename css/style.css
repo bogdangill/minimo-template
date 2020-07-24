@@ -5,6 +5,18 @@ body {
     color: #626262;
 }
 
+/* паттерн для всяких скринридеров, чтобы читать скрытый текст, не предусмотренный в макете*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
 /* адаптивные картинки */
 img {
     max-width: 100%;
@@ -20,6 +32,10 @@ p { line-height: 1.5rem; }
 h2, h3 {
     margin: 1rem 0;
     font-size: 30px;
+}
+
+header .navbar {
+    padding: 50px 0;
 }
 
 header .navbar-brand {
@@ -122,4 +138,40 @@ header .nav-item a:hover::after {
     top: -5px;
     right: 0;
     font-size: 25px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.footer-info a, .follow span {
+    color: black;
+    padding-right: 15px;
+}
+
+.follow-icon {
+    width: 20px;
+    height: 20px;
+    /* background-color: #626262; */
+    margin-right: 15px;
+}
+
+.goto-fb-icon {
+    background: url('../img/facebook.png') no-repeat center;
+}
+
+.goto-tw-icon {
+    background: url('../img/twitter.png') no-repeat center;
+}
+
+.goto-in-icon {
+    background: url('../img/instagram.png') no-repeat center;
+}
+
+.goto-fb-icon:hover,
+.goto-tw-icon:hover,
+.goto-in-icon:hover {
+    opacity: 50%;
 }
